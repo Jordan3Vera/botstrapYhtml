@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Offcanvas</title>
+	<!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<main class="mt-4 container">
+		<h3>Componentes Offcanvas</h3>
+        <p>El Offcanvas incluye soporte para un encabezado con un botón de cierre y una clase de cuerpo opcional apra algo de relleno inicial.</p>
+        <p>Siempre viene oculto por defecto, por que hay que poner show</p>
+        <!-- Link para ver el offcanvas -->
+        <a href="#ejemplo" data-bs-toggle="offcanvas" role="link" aria-controls="ejemplo">Haz clic para ver el canvas</a>
+        <button type="button" class="btn btn-success" aria-controls="ejemplo" data-bs-toggle="offcanvas" data-bs-target="#ejemplo">Ahora como botón</button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="ejemplo" aria-labelledby="navHide">
+            <!-- La cabecera, esto ayudará a mostrar un titulo y ponerle un botón de cierre. Algo parecido a modal -->
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="navHide">Titulo de offcanvas</h5> 
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <strong>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, necessitatibus odit alias, accusamus eligendi blanditiis iusto nemo distinctio aperiam enim.
+                </strong>
+            </div>
+        </div>
+        <hr>
+        <!-- Las posiciones del offcanvas -->
+        <h3>Offcanvas positions</h3>
+        <p>También se le puede dar posiciones a los dialogos de mensajes</p>
+        <div class="d-md-flex gap-1 d-sm-inline-flex">
+        	<button type="button" class="btn btn-outline-danger flex-fill" data-bs-toggle="offcanvas" aria-controls="positionTop" data-bs-target="#top">Arriba</button>
+        	<button type="button" class="btn btn-outline-secondary flex-fill" data-bs-toggle="offcanvas" aria-controls="positonRight" data-bs-target="#right">Derecha</button>
+        	<button type="button" class="btn btn-outline-warning flex-fill" data-bs-toggle="offcanvas" aria-controls="positonBottom" data-bs-target="#bottom">Abajo</button>
+        	<button type="button" class="btn btn-outline-dark flex-fill" data-bs-toggle="offcanvas" aria-controls="positonLeft" data-bs-target="#left">Izquierda</button>
+        </div>
+        <!-- Mensaje button-top -->
+        <div class="offcanvas offcanvas-top" id="top" aria-labelledby="#pTop">
+        	<div class="offcanvas-header">
+        		<h5 class="offcanvas-tittle" id="pTop">Muestra hacia arriba</h5>
+        		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        	</div>
+        </div>
+        <!-- Mensaje button-right -->
+        <div class="offcanvas offcanvas-end" id="right" aria-labelledby="#pRight">
+        	<div class="offcanvas-header">
+        		<h5 class="offcanvas-tittle" id="pRight">Muestra hacia la derecha</h5>
+        		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        	</div>
+        </div>
+        <!-- Mensaje button-bottom -->
+        <div class="offcanvas offcanvas-bottom" id="bottom" aria-labelledby="#pBottom">
+        	<div class="offcanvas-header">
+        		<h5 class="offcanvas-tittle" id="pBottom">Muestra hacia abajo</h5>
+        		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        	</div>
+        </div>
+        <!-- Mensaje button-top -->
+        <div class="offcanvas offcanvas-start" id="left" aria-labelledby="#pLeft">
+        	<div class="offcanvas-header">
+        		<h5 class="offcanvas-tittle" id="pLeft">Muestra hacia la izquierda</h5>
+        		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        	</div>
+        </div>
+	</main>
+</body>
+</html>

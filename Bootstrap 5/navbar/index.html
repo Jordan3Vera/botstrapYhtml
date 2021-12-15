@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Icons font awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Library JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- La cabecera  -->
+    <header>
+        <!-- Esta etiqueta nav será la barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+            <!-- Este contener contendrá los datos  -->
+            <div class="container-fluid text-uppercase">
+                <!-- Este "a", es el titulo -->
+                <a href="#" class="navbar-brand">
+                    <i class="fas fa-home text-primary"></i>
+                </a>
+                <!-- Este botón es para mostrar el menú cuando la pantalla es chica o responsive de dispositivos móviles -->
+                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarView" aria-controls="navbar-View" aria-expanded="false" aria-label="navigation">
+                    <!-- Este span es un icono que se mostrará -->
+                    <i class="fa fa-align-justify" aria-hidden="false"></i>
+                    <!-- Es un icono predeterminado por bootstrap, también puedes elegir unos de fontawesome -->
+                </button>
+                <!-- En este div va a estar relacionado con el button para que muestre el contenido desplegable en pantalla pequeñas el id debe ser correcto con el button-->
+                <div class="collapse navbar-collapse" id="navbarView">
+                    <!-- Este ul será la navegación del contenido -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <!-- Los li son los items -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">html</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">css</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">javascript</a>
+                        </li>
+                        <!-- Este li tendrá una lista desplegable -->
+                        <li class="nav-item dropdown">
+                            <!-- Al igual que el botón, esto es igual solo que acá el "a" sería como el botón desplegable -->
+                            <a href="#" class="nav-link dropdown-toggle" id="frameworks" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                frameworks
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="frameworks">
+                                <li><a href="#" class="dropdown-item">Bootstrap</a></li>
+                                <li><a href="#" class="dropdown-item">TailwindCss</a></li>
+                                <li><a href="#" class="dropdown-item">Foundation</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="#" class="dropdown-item">Pure Css</a></li>
+                                <li><a href="#" class="dropdown-item">Bulma</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Este "a" estará desactivado -->
+                            <a href="#" class="nav-link disabled" aria-disabled="true" tabindex="-3">Licencia</a>
+                        </li>
+                    </ul>
+                    <!-- Y por último el buscador; que va encerrado dentro de un form  -->
+                    <!-- Es un display flex porque lo va dividir en colunas -->
+                    <form action="" class="d-flex">
+                        <!-- En este caso son dos columnas porque se necesitan dos etiquetas nada mas  -->
+                        <input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Search">
+                        <button type="submit" class="btn btn-outline-success">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

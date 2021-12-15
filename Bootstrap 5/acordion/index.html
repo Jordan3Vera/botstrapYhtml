@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acordion</title>
+        <!-- Icons font awesome  -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <!-- Bootstrap5 CSS  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap5 JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="text-center mt-5">Un acordion de ejemplo</h1>
+        </header>
+        <main>
+            <!-- Alineo la sección al centro de la página -->
+            <section class="container-fluid row col-sm-12 col-md-6 m-auto">
+                <!-- Igual que el navbar esto es un acordeon. Este div es la base  -->
+                <div class="accordion" id="accordionExample">
+                    <!-- El primer item -->
+                    <div class="accordion-item">
+                        <!-- El titulo o cabecera -->
+                        <h2 class="accordion-header" id="primerAccordion">
+                            <!-- Transformo este h2 como un botón -->
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsarUno" aria-expanded="true" aria-controls="colapsarUno">
+                                Lorem, ipsum dolor.
+                            </button>
+                        </h2>
+                        <!-- Este id va a estar llamando al button donde el data-target  -->
+                        <div id="colapsarUno" class="accordion-collapse collapse show" aria-labelledby="primerAccordion" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Lorem ipsum dolor sit amet consectetur.</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maiores quos architecto ab ex? Voluptates aliquam officiis dignissimos temporibus. Eos debitis dolorum quisquam dolorem beatae corrupti commodi? Ex, illo id.
+                                Odit adipisci expedita modi sint error magnam beatae, assumenda autem corporis quibusdam debitis at possimus? Ipsa nulla esse sequi, atque, perferendis aperiam eveniet alias repellat ea et illo dignissimos minus!
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Puedes hacer cualqueir tipo de item posibles, RECOMDABLE: es bueno porque puedes llamar desde una base de datos  -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="segundoAccordion">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsarDos" aria-expanded="false" aria-controls="colapsarDos">
+                                Lorem, ipsum dolor 2.
+                            </button>
+                        </h2>
+                        <div id="colapsarDos" class="accordion-collapse collapse" aria-labelledby="segundoAccordion" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Lorem ipsum dolor sit amet consectetur.</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sunt reprehenderit laborum aut doloribus voluptatem provident quia quibusdam fugit alias omnis veritatis debitis vel accusamus, cum magnam nostrum similique quod.
+                                Modi enim, vitae minima dicta velit facilis aperiam cumque laborum voluptatum architecto quos nisi veritatis magni a, vero alias dignissimos odio debitis dolores. Dolore voluptas cum dolorum illum excepturi voluptates.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

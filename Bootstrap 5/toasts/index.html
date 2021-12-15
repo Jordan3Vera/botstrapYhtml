@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Toasts</title>
+	<!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Icons font awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Library JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+    	body{
+    		background-color: lightgrey;
+    		margin: 0;
+    		padding: 0;
+    		font-family: arial, Sans-serif;
+    		
+    	}
+    	.toast-body{
+    		font-family: vagrant;
+    	}
+    </style>
+</head>
+<body>
+	<main class="mt-md-5 col-sm-7 mx-auto ">
+		<h1 class="bg-primary">Toasts</h1>
+		<p>El toasts permiten enviar notificaciones automáticas al los visitantes que ingresan en la página. Es una caja, un mensaje de alerta ligero y fácilmente personalizable.</p>
+		<!-- Un ejemplo básico para mostrar un msj -->
+		<div class="toast show bg-light" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<img src="./net.jpg" alt="Imagen de .Net" class="rounded me-2 img-fluid" width="30">
+				<strong class="me-auto">My first mesage</strong>
+				<small>12 minutes</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				La verdad Jordan! que sos un groso y me sorprendes.
+			</div>		
+		</div>
+		<p>Recuerda que para que funciones debes de llamarlo desde el script para que funcione.</p>
+		<hr>
+		<!-- --------------------------------------------------------------------------------- -->
+		<h3>Mostrar mensaje con un click de botón</h3>
+		<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+		<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+		  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+		    <div class="toast-header">
+		      <img src="./net.jpg" width="20" height="20" class="rounded me-2" alt="Imagen 2 de .Net">
+		      <strong class="me-auto">Bootstrap</strong>
+		      <small>11 mins ago</small>
+		      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+		    </div>
+		    <div class="toast-body">
+		      Hello, world! This is a toast message.
+		    </div>
+		  </div>
+		</div>
+		<p>Para que funcione debes hacer el jQuery, porque hay que darle un evento a ese button.</p>
+		<hr>
+		<h3>Toast en acción</h3>
+		<div class="toast" role="alert" id="liveToast2" aria-live="assertive" aria-atomic="true">
+		  <div class="toast-body">
+		    Hello, world! This is a toast message.
+		    <div class="mt-2 pt-2 border-top">
+		      <button type="button" class="btn btn-primary btn-sm">Take action</button>
+		      <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+		    </div>
+		  </div>
+		</div>
+	</main>	
+	<script>
+		$(document).ready(function(){
+			$('#liveToastBtn').click(function(event) {
+				event.preventDefault();
+				$('#liveToast').toast('show');
+			});
+
+			$('#liveToast2').toast('show');
+		});
+	</script>
+</body>
+</html>

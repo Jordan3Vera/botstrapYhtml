@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumb</title>
+    <!-- Icons font awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1 class="text-uppercase text-center mt-5">Breadcrumb</h1>
+    <div class="container mx-auto w-50">
+        <p>Lo mas recomendable y para que funcione es usar una lista ordenada o desordenada con una lista de items para crear
+            un estilo minimizado de breadcrumb (migaja de pan) </p>
+        <p>Lo puedes definir con un div pero con un nav es mejor, porque sabes lo que especificas</p>
+        <!-- El "aria-label" es para que especifique correctamente las list order or unorder -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Librería</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Juguetes</li>
+            </ol>
+        </nav>
+        
+        <h2>Dividers</h2>
+        <p>También esta el "divider" que permite agregar cualquier caracter con style. Ademas puedes utilizar iconos con fas fa-icon</p>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Juegos</a></li>
+                <li class="breadcrumb-item"><a href="#">Videos</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Carreras</li>
+            </ol>
+        </nav>
+    </div>
+</body>
+</html>

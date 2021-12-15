@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Alertas</title>
+            <!-- Icons font awesome  -->
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+            <!-- Bootstrap5 CSS  -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Bootstrap5 JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        </meta>
+    </head>
+    <body>
+        <h1 class="text-center mt-5">Mostrando alertas</h1>
+        <div class="container m-auto w-50">
+            <p>Iconos con alertas</p>
+            <!-- La primer alerta  -->
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <!-- Le pongo el icono -->
+                <i class="fas fa-check-circle me-2"></i>
+                <div>
+                    Si estas en lo correcto
+                </div>
+                <!-- Puedes hacer todas las alertas que quiera con sus respectivos iconos -->
+            </div>
+
+            <div class="alert alert-danger alert-dismissible d-flex align-items-center fade show" role="alert">
+                <strong>Esta alerta permite borrar</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+            </div>
+
+        </div>
+    </body>
+</html>

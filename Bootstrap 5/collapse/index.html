@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <!-- Icons font awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <main class="mt-5 row justify-content-center">
+        <div class="col-md-6 col-sm-12">
+            <h1 class="text-center bg-success">Collapse</h1>
+            <p>Con el collapse puedo ocultar y mostrar contenido ya que son botones o anclajes que se utilizan como
+                activadores que se asignan a elementos especificos que alterna.
+            </p>
+            <strong>Un breve ejemplo sobre como funciona</strong>
+            <div class="card mt-3">
+                <div class="card-header bg-dark btn" data-bs-toggle="collapse" data-bs-target="#colapsar" aria-expanded="false" role="button" aria-controls="Ejemplo de colapso">
+                    <h5 class="card-title text-light">Breve ejemplo con un card</h5>
+                </div>
+                <div class="card-body collapse bg-secondary" id="colapsar">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut modi minima officia et vel cumque eum maxime quidem. Temporibus, velit.</p>
+                </div>
+            </div>
+            <hr>
+            <p>Tambien puedes darle ciertas peticiones con el toggle. Uno porque selecciono el elemento que quiero que me muestre en base al id
+                (ovbiamente lo muestra un por uno)</p>
+            <p>O de última mostrar los contenidos que tengan la misma clase</p>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-danger w-100" data-bs-target="#firstToggle" data-bs-toggle="collapse" aria-controls="firstToggle" aria-expanded="false">Primer elemento toggle</button>
+                <button type="button" class="btn btn-danger w-100 mx-2" data-bs-target="#secondToggle" data-bs-toggle="collapse" aria-controls="secondToggle" aria-expanded="false">Segundo elemento toggle</button>
+                <button type="button" class="btn btn-danger w-100" data-bs-target=".multi-collapse" data-bs-toggle="collapse" aria-controls="bothElments" aria-expanded="false">Ambos elementos toggle</button>
+                <!-- El role="button" se pone solo cuando la etiqueta no es un botón, po lo cual le estamos especificando con eso -->
+                <!-- Para hacer que ambos elementos funcionen, en el data-bs-target defines un nombre, pero debe ser el mismo que la clase por defecto de 
+                de bootstrap llamado multi-collapse. Recomendación: pon el mismo nombre pero con un punto ya que lo defines en cada elemento  -->
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <div class="card w-100 bg-secondary rounded-0 collapse multi-collapse" id="firstToggle">
+                    <h5 class="card-title text-center border-bottom">Primer vista</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dignissimos nesciunt quo. Voluptas tenetur reiciendis dolorem temporibus nisi? Voluptate, reiciendis!</p>
+                </div>
+                <div class="card w-100 bg-primary rounded-0 collapse multi-collapse" id="secondToggle">
+                    <h5 class="card-title text-center border-bottom">Segunda vista</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure pariatur, natus omnis ab esse alias minus vel fuga quis blanditiis.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

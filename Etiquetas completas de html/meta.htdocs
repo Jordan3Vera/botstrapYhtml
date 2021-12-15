@@ -1,0 +1,12 @@
+#El elemento HTMl <meta>
+
+Se utiliza normalmente para especificar el conjunto de caracteres, la descripción de la página, las palabras clave, el autor del documento y la configuración de la ventana gráfica.
+
+#Ejemplos de meta
+
+<meta charset="uft-8"> --Define el juego de caracteres utilizados 
+<meta name="keywords" content="HTML, CSS, JAVASCRIPT"> --Define palabras claves para motores de busquedas
+<meta name="description" content="Free Web tutorials"> --Define una descripción de tu página web
+<meta name="author" content="Jose Guido"> --Define el autor de la página
+<meta http-equiv="refresh" content="30"> --Actualiza el documento cada 30 segundos
+<meta name="viewport" content="width="width=devide-width, initial-scale=1.0"> --Es la configuración de la ventana gráfica para que tu sitio web se vea bien en todos los dispositivos

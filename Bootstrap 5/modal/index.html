@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="com-md-7 mt-4">
+            <h1>Modal</h1>
+            <p>El "modal" es un poco parecido a "card". Solo que con el modelo puedes mostrar contenido <wbr> como si se hiciera
+                con javacript los alert. Está muy bueno y ve un ejemplo</p>
+            <!-- Este será el modal  -->
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#ejemploModal">
+                Presiona y mira lo que pasa
+            </button>
+            <!-- Acá estará el contenido que quiero mostrar al hacer click -->
+            <div class="modal fade" id="ejemploModal" tabindex="-1" aria-labelledby="ejemploModalLabel" aria-hidden="true">
+                <!-- Le digo que va a ser un dialogo -->
+                <div class="modal-dialog">
+                    <!-- Asi como se pone card el content sería esto -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ejemploModalLabel">Titulo modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <!-- El data-bs-dismiss borra, elemina o cierra el modal  -->
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vero explicabo expedita,
+                                repellendus, nobis dolores dignissimos, architecto quam incidunt inventore nam assumenda
+                                repellat omnis delectus ipsam quibusdam sed consequatur ut?
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-success">Guardar cambios</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Conlusión: -->
+                    <!-- El data-bs-target del boton va a estar enlzado con el div de modal. -->
+            </div>
+            <!-- -------------------------------------------------------------------------------------------------------------- -->
+            <br>
+            <h3 class="mt-3">Fondo estático o "statick backdrop"</h3>     
+            <p>Lo que hace este es no cerrar el modal cuando se hace click por fuera del mensaje</p>
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#ejemploModal2">
+                Presiona y mira lo que pasa
+            </button>
+            <!-- Acá estará el contenido que quiero mostrar al hacer click -->
+            <div class="modal fade" id="ejemploModal2" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ejemploModalLabel2" aria-hidden="true">
+                <!-- Para que quede estático debes usar el data-bs-backdrop="static" -->
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ejemploModalLabel2">Titulo modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vero explicabo expedita,
+                                repellendus, nobis dolores dignissimos.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-success">Guardar cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+            <br>
+            <h3 class="mt-3">Desplazarse por el contenido y centrarlo</h3>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ejemploModal3">
+                Mostrar modal con scrollbar
+            </button>
+            <div class="modal fade" id="ejemploModal3" tabindex="-1" aria-hidden="true" aria-labelledby="ejemploModalLabel3" aria-hidden="true">
+                <!-- Se mostrará otro tipo de modal  -->
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ejemploModalLabel3">Otro model-dialog "Scrollable</h5>
+                            <!-- Para cerrar el modal -->
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Culpa maiores, assumenda doloremque, cupiditate laboriosam
+                                quisquam tempore corrupti aut tempora atque reprehenderit 
+                                accusamus, cumque ipsa debitis a ab? Eaque, facilis veritatis.
+
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Neque dignissimos, provident corporis iste dolorem distinctio 
+                                tempora ex amet, quam recusandae iusto, ipsam minima. Neque officiis 
+                                minima dolorem explicabo ipsa. Aliquid.
+                                Adipisci alias voluptates, libero explicabo dignissimos 
+                                iste saepe porro voluptas perspiciatis minima cum fugit 
+                                repellendus dolorem quidem iusto vel accusantium? Perferendis 
+                                explicabo soluta qui. Praesentium molestiae natus optio ab asperiores?
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <br>
+            <h3 class="mt-3">Mostrar msj en un modal</h3>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#ejemploModal4">
+                Saber que pasa
+            </button>
+            <div class="modal fade" id="ejemploModal4" tabindex="-1" aria-labelledby="ejemploModalLabel4" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ejemploModalLabel4">Titulo de esta sección</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="modal-subtitle">Mostrar mensaje</h6>
+                            <p class="modal-text">
+                                Presionar para saber que dice <a href="#" role="button" data-bs-toggle="popover" class="btn btn-primary popover-test" title="Gracias por haber tocado"
+                                data-bs-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore!">toca</a> el botón.
+                                <!-- El "popover-test" hace que muestre un mensaje al hacer click en el  -->
+                            </p>
+                            <h6 class="modal-subtitle">Gracias por todo!</h6>
+                            <p>
+                                Lorem, ipsum <a href="#" class="tooltip-test" title="This a link page"> Maizane</a> ipsum.
+                            </p>
+                            <!-- El "tooltip-test" lo que hace es mostrar un titulo -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-controls="Close">Cerrar</button>
+                            <button type="button" class="btn btn-success">Guardar cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- ----------------------------------------------------------------------------------------------------------- -->
+        </div>
+    </main>
+</body>
+</html>

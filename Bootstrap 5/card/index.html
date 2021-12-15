@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <!-- Icons font awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1 class="text-uppercase text-center mt-5">cards</h1>
+    <div class="w-50 mx-auto mt-3">
+        <p>Los card son como pequeños bordes que permiten encerrar o mostrar contenido como si fuera un mini sitio web interno</p>
+        <!-- Especifico el card  -->
+        <div class="card w-75 mx-auto">
+            <img src="./html_css.jpg" alt="Imagen de ejemplo" class="card-img-top img-thumbnail">
+            <div class="card-header text-center">
+                <h4 class="card-title">Lorem ipsum dolor sit.</h4>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis accusamus id. Quam totam, veniam, dolores sit 
+                temporibus amet commodi autem, consequatur necessitatibus molestias molestiae nisi. Quaerat, asperiores at! Exercitationem!</p>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex py-3 gap-3 justify-content-center">
+                    <p class="bg-danger">Lorem, ipsum dolor1.</p>
+                    <p class="bg-warning">Lorem, ipsum dolor2.</p>
+                </div>
+            </div>
+        </div>
+        <p>Recomendación: si vas a hacer un card, cuando pongas algo, especifica el significado en cada clase. 
+            <br>Por ejemplo: card-title, card-subtitle, card-text, card-link, etc.
+        </p>
+        <hr>
+        <h3 class="mt-3">Lista de grupos</h3>
+        <div class="card w-50 bg-primary">
+            <div class="card-header">
+                <h5 class="card-title text-center">Ver lista</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Lorem, ipsum dolor1.</li>
+                <li class="list-group-item">Lorem, ipsum dolor Lorem, ipsum2 .</li>
+                <li class="list-group-item">
+                    <div class="card-header bg-secondary">
+                        <div class="card-title">Titulo</div>
+                    </div>
+                    <div class="card-body bg-danger rounded-bottom text-light">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="card-footer border-bottom border-danger">
+                        <div class="card-text">Más información</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p>Quiere decir que puedes poner contenido dentro de cada li porque son grupos; osea, puede poner varios cards</p>
+        <hr>
+        <!-- Tambien puedes hacer una navegación dentro de un card si solo funciona con los nav-tabs (siempre hacerlo con una lsita) -->
+        <h3>Navigation (navegación)</h3>
+        <div class="card w-75 mx-auto mb-5">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true" disabled>Confidential</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-center">Titulo de tratamiento especial</h5>
+                <p class="card-text text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta labore quaerat facilis sunt, similique exercitationem?
+                </p>
+            </div>
+        </div>
+        <p>También esta el modo nav-pills</p>
+        <div class="card w-75 mx-auto mb-5">
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled" aria-disabled="true">Confidential</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Método nav-pills</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora velit atque. Nobis, eos perferendis.</p>
+            </div>
+        </div>
+        <hr>
+        <h3>Imagen overlays</h3>
+        <p>Puedes poner contenido dentro una imagen con el overlay</p>
+        <div class="card w-75">
+            <img src="./html_css.jpg" alt="Ejempo con overlay" class="card-img">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorem.</p>
+            </div>
+        </div>
+        <hr>
+        <h3>Imagen horizontal</h3>
+        <p>Puedes hacer un card poniendo la imagen horizontalmente; algo parecido a un float. Solo que acá se usan las filas</p>
+        <div class="card w-75 mx-auto mb-5" >
+            <div class="row g-1">
+                <div class="col-md-4">
+                    <div class="carad-header">
+                        <img src="./html_css.jpg" alt="Misma imagen" class="img-fluid rounded-start">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">Imagen html-css</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, explicabo.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate nulla sint, dolores explicabo reiciendis itaque ex temporibus! Minus distinctio molestiae similique fuga adipisci. Earum tempore aliquam alias velit eius!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Y por último tenemos los card group. Es exactamente lista de grupo nada mas y funciona como se explicó con los botones</p>
+        <div class="card-group">
+            <div class="card bg-secondary">
+                <div class="card-header">
+                    <h4 class="card-title text-center">Card 1</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis corrupti cupiditate praesentium. Vero error animi accusamus ab expedita quidem?</p>
+                </div>
+            </div>
+            <div class="card bg-dark text-light">
+                <div class="card-header">
+                    <h5 class="card-title text-center">Card 2</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, sint similique ab neque soluta voluptas quaerat vel quod itaque hic.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3>Me faltó el grid card</h3>
+        <p>Se lo puede hacer de manera resposive (recuerda que el "g" es un gap de espaciado)</p>
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+            <!-- La columnas las hará automaticamente dependiendo del tamaño de la pantalla -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./html_css.jpg" alt="Primer card" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Primer card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vero quam facere aperiam culpa minus ullam in dolor vitae delectus?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./html_css.jpg" alt="Segundo card" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Segundo card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vero quam facere aperiam culpa minus ullam in dolor vitae delectus?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./html_css.jpg" alt="Tercer card" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tercer card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vero quam facere aperiam culpa minus ullam in dolor vitae delectus?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./html_css.jpg" alt="Cuarto card" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cuarto card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vero quam facere aperiam culpa minus ullam in dolor vitae delectus?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- En esta grilla o grid primero se definió un row por filas y luego de eso se puso un "row-cols-2" para decirle que cada fila 
+            estará separada por dos columnas o las que necesite (tambien esta "row-cols-md-2") => es decir que se especifica la separación
+            de cards dependiendo el tamaño de la pantalla. -->
+        </div>
+
+
+    </div>
+</body>
+</html>

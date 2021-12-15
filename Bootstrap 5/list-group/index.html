@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List-group</title>
+    <!-- Icons font awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <main class="container">
+        <h1 class="text-uppercase mt-4">List-group</h1>
+        <p>Ejemplo basico de una lista</p>
+        <ul class="list-group col-md-6 colsm-12">
+            <li class="list-group-item">Un item</li>
+            <li class="list-group-item">Un segundo item</li>
+            <li class="list-group-item">Un tercer item</li>
+            <li class="list-group-item">Un cuarto item</li>
+            <li class="list-group-item">Un quinto item</li>
+        </ul>
+        <p>Sería algo como un list-group y los item de ese list-group.</p>
+        
+        <h3>List-group active item and disabled item</h3>
+        <p>Ahora un list-group basico pero con un item activo (active) y otro no disponible (disable)</p>
+        <ul class="list-group col-md-6 col-sm-12">
+            <li class="list-group-item active">Un item</li>
+            <li class="list-group-item">Un segundo item</li>
+            <li class="list-group-item">Un tercer item</li>
+            <li class="list-group-item">Un cuarto item</li>
+            <li class="list-group-item disabled">Un quinto item</li>
+        </ul>
+        <br>
+        <h3>List-group-flush</h3>
+        <ul class="list-group list-group-flush col-md-6 col-sm-12">
+            <li class="list-group-item active" >Un item</li>
+            <li class="list-group-item">Un segundo item</li>
+            <li class="list-group-item">Un tercer item</li>
+            <li class="list-group-item">Un cuarto item</li>
+            <li class="list-group-item">Un quinto item</li>
+        </ul>
+        <p>Este list-group list-group-flush muestra una última linea.</p>
+
+        <h3>List-group-numbered</h3>
+        <div class="d-flex">
+            <ul class="list-group list-group-numbered w-100">
+                <li class="list-group-item active" aria-current="page">Un item</li>
+                <li class="list-group-item">Un segundo item</li>
+                <li class="list-group-item">Un tercer item</li>
+                <li class="list-group-item">Un cuarto item</li>
+                <li class="list-group-item disabled">Un quinto item</li>
+            </ul>
+            <ul class="list-group list-group-numbered w-100 mx-5">
+                <li class="list-group-item active d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw bold">Item uno</div>
+                        Cantidad de mensajes
+                    </div>
+                    <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw bold">Item dos</div>
+                        Cantidad de mensajes
+                    </div>
+                    <span class="badge bg-primary rounded-pill">10</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw bold">Item tres</div>
+                        Cantidad de mensajes
+                    </div>
+                    <span class="badge bg-primary rounded-pill">18</span>
+                </li>
+            </ul>
+        </div>
+        <p>Le da un número a cada item. Recuerda; es importante hacerlo en una lista desordenada. 
+        También puedes trabajar con los badge para mostrar un numero por ejemplo.</p>
+        <h3>Clases contextuales</h3>
+        <ul class="list-group col-md-6 col-sm-12">
+            <li class="list-group-item list-group-item-secondary" >Un item</li>
+            <li class="list-group-item list-group-item-primary">Un segundo item</li>
+            <li class="list-group-item list-group-item-warning">Un tercer item</li>
+            <li class="list-group-item list-group-item-danger">Un cuarto item</li>
+            <li class="list-group-item list-group-item-success">Un quinto item</li>
+        </ul>
+        <br>
+        <h3>Contenido personalizado</h3>
+        <ul class="list-group col-md-6">
+            <li class="list-group-item lit-group-item-action active" aria-current="true">
+                <div class="d-flex w-100 justify-content-between align-items-start">
+                    <h5 class="mb-1">Lista de mensajes</h5>
+                    <small>25-08-2021</small>
+                </div>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
+                <small>Hace 3 días</small>
+            </li>
+            <li class="list-group-item lit-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between align-items-start">
+                    <h5 class="mb-1">Lista de mensajes</h5>
+                    <small>04-11-2021</small>
+                </div>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
+                <small>Hace muchos días</small>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

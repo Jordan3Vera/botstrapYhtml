@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nav & Tabs</title>
+        <!-- Bootstrap5 CSS  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap5 JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            <h1 class="mt-5">Nav and Tabs</h1>
+            <p>El componente base .nav está construido con flexbox y proporciona una base sólida para contruir todo tipo de componentes de navegación. Incluye algunas modificaciones de estilo (para trabajar con listas), algo de relleno de enlaces para áreas de impacto más grandes y estilo básico desabilidato.</p>
+            <p><b>Conclusión:</b> este mejor y perfecto para usarlo como aside (barra de navegación interna)</p>
+
+            <h3>Un .nav base</h3>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Words</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled" aria-current="true" tabindex="-1" aria-disabled="true">Personal</a>
+                </li>
+            </ul>
+            <p>Un navegación de forma horizontal</p>
+            <hr>
+            <h3>Posicionamiento del .nav (justify-content-)</h3>
+            <aside>
+                <ul class="nav justify-content-start">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Dogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled" aria-disable="true" tabindex="-1">Chickens</a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- Centro -->
+            <aside>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Dogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled" aria-disable="true" tabindex="-1">Chickens</a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- Final -->
+            <aside>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Dogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled" aria-disable="true" tabindex="-1">Chickens</a>
+                    </li>
+                </ul>
+            </aside>
+            <hr>
+            <h3>Nav vartical</h3>
+            <aside>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Maíz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pollo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled" aria-disable="true" tabindex="-1">Galletas</a>
+                    </li>
+                </ul>
+            </aside>
+            <p>Como siempre, la navagación vertical es posible sin "ul" también.</p>
+            <aside class="nav flex-column">
+                <a href="#" class="nav-link active" aria-current="page">Home</a>
+                <a href="#" class="nav-link">Coyote</a>
+                <a href="#" class="nav-link">Gallina</a>
+                <a href="#" class="nav-link disabled">Bombones</a>
+            </aside>
+            <hr>
+            <h3>Ahora con tabs</h3>
+            <aside>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cebolla</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Queso</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disable" aria-disabled="true" tabindex="-1">Chocolate</a></li>
+                </ul>
+            </aside>
+            <hr>
+            <h3>Ahora con pills</h3>
+            <aside>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cebolla</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Queso</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disable" aria-disabled="true" tabindex="-1">Chocolate</a></li>
+                </ul>
+            </aside>
+            <hr>
+            <h3>Ahora el fill y justify</h3>
+            <p>Lo que hace es que todos los elementos tenga el mismo ancho.</p>
+            <aside>
+                <ul class="nav nav-fill nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cebolla</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Queso</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disable" aria-disabled="true" tabindex="-1">Chocolate</a></li>
+                </ul>
+            </aside>
+            <p>El nav-justified: hace igualar el mismo ancho a todos los elementos. Todo el espacio horizontal estará ocupado por enlaces de navegación a diferencia del nav-fill</p>
+            <aside>
+                <ul class="nav nav-justified nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cebolla</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Queso</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disable" aria-disabled="true" tabindex="-1">Chocolate</a></li>
+                </ul>
+            </aside>
+            <hr>
+            <h3>Comportamientos de msj con los tabs</h3>
+            <p>Esta navegación mostrará contenido, algo parecido como el otro (los card)</p>
+            <aside class="mb-4">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                        <!-- Le digo que es un link, un id(para llamarlo), una data-bs-toggle(de modo tab), un data-bs-target(para que este relacionado con el otro contenido al que quiero llamar), el rol(que va a ser un tab el rol que le doy por mas que la etiqueta sea a "o cualquier otra"), un aria-controls(para especificar que es)y por último un area-selected(para que ya esté seleccionado). -->
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <!-- Una vez definida la navegación se le pasa a poner contenido y este puede ser llamado desde el id -->
+                <div class="tab-content" id="myTabContent">
+                    <!-- El "id" de cada "div" está relacionado con el data-bs-target del "li a" en el "ul". Y el "aria-laballedby" relacionado con el "id" del "a" -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Natus, eligendi exercitationem aut facilis repellat quaerat libero earum commodi! Asperiores quasi possimus, dicta doloremque corporis praesentium, voluptatum doloribus aperiam assumenda minima?
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Esse nulla, expedita voluptatum eaque fugiat itaque vero minima optio consectetur error dolor. Veniam repellat consectetur facere consequuntur voluptate! Eveniet, maiores, iste!
+                        Hic, tempore architecto. Laudantium pariatur suscipit et eum porro mollitia quos, ipsa impedit modi reiciendis officiis fuga libero sapiente numquam! Numquam impedit dolorum illum. Repudiandae vero enim placeat cum et.
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, dolores?.</b>
+                    </div>
+                </div>
+            </aside>
+            <hr>
+            <h3>También se lo puede hacer verticalmente con el pill</h3>
+            <aside class="mb-4 d-flex align-items-start">
+                <ul class="nav nav-tabs flex-column nav-pills me-2 text-center" id="myTab2" role="tablist2" aria-orientation="vertical">
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="one-tab" data-bs-toggle="pill" data-bs-target="#one" role="tab" aria-controls="one" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="two-tab" data-bs-toggle="pill" data-bs-target="#two" role="tab" aria-controls="two" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="three-tab" data-bs-toggle="pill" data-bs-target="#three" role="tab" aria-controls="three" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                        Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Natus, eligendi exercitationem aut facilis repellat quaerat libero earum commodi! Asperiores quasi possimus, dicta doloremque corporis praesentium, voluptatum doloribus aperiam assumenda minima?
+                    </div>
+                    <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                        Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Esse nulla, expedita voluptatum eaque fugiat itaque vero minima optio consectetur error dolor. Veniam repellat consectetur facere consequuntur voluptate! Eveniet, maiores, iste!
+                        Hic, tempore architecto. Laudantium pariatur suscipit et eum porro mollitia quos, ipsa impedit modi reiciendis officiis fuga libero sapiente numquam! Numquam impedit dolorum illum. Repudiandae vero enim placeat cum et.
+                    </div>
+                    <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                        <b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, dolores?.</b>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Popover</title>
+	<!-- Bootstrap5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Icons font awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Librarie JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+	<main class="container mt-4">
+		<h1>Popover</h1>
+		<p>El popover lo que hace es mostrar un dialogo. En el siguiente boton verás un claro ejemplo.</p>
+		<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Presiona para ver ejemplo</button>
+		<p>Recuera que para que funcione debes llamarlo desdel script</p>
+		<hr>
+		<h3>Popover positions</h3>
+		<div class="d-flex gap-1 flex-fill">
+			<!-- Con el data-bs-placement de doy la dirección hacia donde quiero que muestre el msj -->
+			<!-- Con el data-bs-content le pongo contenido -->
+			<button type="button" class="btn btn-success" data-bs-toggle="popover" title="Welcome top" data-bs-content="Feclicidades! ahora te funciona la..." data-bs-placement="top">Mensaje superior</button>
+			<button type="button" class="btn btn-danger" data-bs-toggle="popover" title="Welcome right" data-bs-content="Felicidades! ahora te funciona la..." data-bs-placement="right">Mensaje derecho</button>
+			<button type="button" class="btn btn-secondary" data-bs-toggle="popover" title="Welcome bottom" data-bs-content="Felicidades! ahora te funciona la..." data-bs-placement="bottom">Mensaje inferior</button>
+			<button type="button" class="btn btn-dark" data-bs-toggle="popover" title="Welcome left" data-bs-content="Felicidades! ahora te funciona la..." data-bs-placement="left">Mensaje izquierdo</button>
+		</div>
+		<hr>
+		<h3>Eliminar algo con Dismiss en el siguiente click</h3>
+		<div class="d-flex gap-1">
+			<button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-content="Su mensaje esta hecho..." title="Mesage dismiss" tabindex="-1" data-bs-trigger="focus">Click dismiss</button>
+			<!-- Con el data-bs-trigger puedo cerrar el msj al hacer click fuera del boton -->
+			<span class="d-inline-block" data-bs-toggle="popover" data-bs-content="No se puede virgo" tabindex="0" data-bs-trigger="hover focus">
+				<button type="button" class="btn btn-danger" disabled>Prohibido</button>
+			</span>
+			<!-- Eso es lo bueno, se mostrará el msj al acercar el mouse -->
+		</div>
+	</main>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('[data-bs-toggle="popover"]').popover();
+		});
+	</script>
+</body>
+</html>
